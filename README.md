@@ -2,5 +2,5 @@
 
 # Brandon Wright!
 # Ryani Durham !
-# Rachel Taima
+# Rachel Taima!
 # Heath Friend
