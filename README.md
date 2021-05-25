@@ -1,6 +1,6 @@
 # All_The_Feels_CRA
 
-# Brandon Wright
-# Ryani Durham
-# Rachel Taima
-# Heath Friend
+# Brandon Wright!
+# Ryani Durham !
+# Rachel Taima!
+# Heath Friend!
