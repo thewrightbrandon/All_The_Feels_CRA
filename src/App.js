@@ -79,26 +79,27 @@ class App extends React.Component {
   }
 
   render = () => {
+
     return (
       <BrowserRouter>
         <div>
-          <nav>
-            <ul className="links">
-              <li>
-                <Link to='/'>Home</Link>
+          <nav className="navbar">
+            <ul className="container-fluid navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link" to='/'>Home</Link>
               </li>
-              <li>
-                <Link to='/AddForm'>Add Mood</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to='/AddForm'>Add Mood</Link>
               </li>
-              <li>
-                <Link to='/MoodChart'>Mood Chart</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to='/MoodChart'>Mood Chart</Link>
               </li>
-              <li>
-                <Link to='/Moods'>View Moods</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to='/Moods'>View Moods</Link>
               </li>
             </ul>
           </nav>
-          <div className="content">
+          <div className="container">
             <Switch>
               <Route exact path='/'>
                 <h1>All The Feels</h1>
