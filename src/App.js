@@ -23,7 +23,7 @@ class App extends React.Component {
 
   addMood = (mood) => {
     axios
-      .post('https://all-the-feels.herokuapp.com/api/moods', mood)
+      .post('http://localhost:8000/api/moods', mood)
       .then(
         (response) => {
           this.getMoods()
@@ -33,7 +33,7 @@ class App extends React.Component {
 
   getMoods = () => {
     axios
-      .get('https://all-the-feels.herokuapp.com/api/moods')
+      .get('http://localhost:8000/api/moods')
       .then(
         (response) => {
           this.setState({ moods: response.data })
@@ -51,7 +51,7 @@ class App extends React.Component {
     event.preventDefault()
     const id = event.target.id
     axios
-      .put('https://all-the-feels.herokuapp.com/api/moods/' + id, this.state)
+      .put('http://localhost:8000/api/moods/' + id, this.state)
       .then(
         (response) => {
           this.getMoods()
@@ -66,7 +66,7 @@ class App extends React.Component {
 
   deleteMood = (event) => {
     axios
-      .delete('https://all-the-feels.herokuapp.com/api/moods/' + event.target.value)
+      .delete('http://localhost:8000/api/moods/' + event.target.value)
       .then(
         (response) => {
           this.getMoods()
@@ -92,10 +92,10 @@ class App extends React.Component {
                 <Link className="nav-link" to='/AddForm'>Add Mood</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to='/MoodChart'>Mood Chart</Link>
+                <Link className="nav-link" to='/Moods'>View Moods</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to='/Moods'>View Moods</Link>
+                <Link className="nav-link" to='/MoodChart'>Mood Chart</Link>
               </li>
             </ul>
           </nav>
@@ -110,9 +110,6 @@ class App extends React.Component {
                   addMood={this.addMood}
                 />
               </Route>
-              <Route path='/MoodChart'>
-                <MoodChart />
-              </Route>
               <Route path='/Moods'>
                 {this.state.moods.map((mood) => {
                   return (
@@ -125,6 +122,9 @@ class App extends React.Component {
                     />
                   )
                 })}
+              </Route>
+              <Route path='/MoodChart'>
+                <MoodChart />
               </Route>
             </Switch>
           </div>
