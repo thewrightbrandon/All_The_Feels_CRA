@@ -7,8 +7,13 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
+<<<<<<< HEAD
     "firebase": "^8.6.2",
     "chart.js": "^3.3.0",
+=======
+    "chart.js": "^3.3.0",
+    "firebase": "^8.6.2",
+>>>>>>> 47228e686a9e4aea80695b170ad9045c4921238a
     "react": "^17.0.2",
     "react-chartjs-2": "^3.0.3",
     "react-dom": "^17.0.2",
