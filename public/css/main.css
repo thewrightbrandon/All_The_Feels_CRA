@@ -14,11 +14,3 @@ body {
   flex-direction: row;
 
 }
-
-.counter-button-container {
-  margin-left: 20px;
-}
-
-.counter-buttons {
-  margin: 45px;
-}
