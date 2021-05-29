@@ -19,7 +19,7 @@ class Moods extends React.Component {
 
   addComment = (mood) => {
     axios
-      .post('http://localhost:8000/api/comments', mood)
+      .post('https://all-the-feels.herokuapp.com/api/comments', mood)
       .then(
         (response) => {
           this.getComments()
@@ -29,7 +29,7 @@ class Moods extends React.Component {
 
   getComments = () => {
     axios
-      .get('http://localhost:8000/api/comments')
+      .get('https://all-the-feels.herokuapp.com/api/comments')
       .then(
         (response) => {
           this.setState({ comments: response.data })
