@@ -23,7 +23,7 @@ class App extends React.Component {
 
   addMood = (mood) => {
     axios
-      .post('http://localhost:8000/api/moods', mood)
+      .post('https://all-the-feels.herokuapp.com/api/moods', mood)
       .then(
         (response) => {
           this.getMoods()
@@ -33,7 +33,7 @@ class App extends React.Component {
 
   getMoods = () => {
     axios
-      .get('http://localhost:8000/api/moods')
+      .get('https://all-the-feels.herokuapp.com/api/moods')
       .then(
         (response) => {
           this.setState({ moods: response.data })
@@ -51,7 +51,7 @@ class App extends React.Component {
     event.preventDefault()
     const id = event.target.id
     axios
-      .put('http://localhost:8000/api/moods/' + id, this.state)
+      .put('https://all-the-feels.herokuapp.com/api/moods/' + id, this.state)
       .then(
         (response) => {
           this.getMoods()
@@ -66,7 +66,7 @@ class App extends React.Component {
 
   deleteMood = (event) => {
     axios
-      .delete('http://localhost:8000/api/moods/' + event.target.value)
+      .delete('https://all-the-feels.herokuapp.com/api/moods/' + event.target.value)
       .then(
         (response) => {
           this.getMoods()
