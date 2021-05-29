@@ -1,5 +1,19 @@
 body {
+	background: linear-gradient(-45deg, #FABEBD,#FED9D3, #FFE7D3, #9DCCEA, #568BBF);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .navbar {
