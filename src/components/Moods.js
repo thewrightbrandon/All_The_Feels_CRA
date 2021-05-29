@@ -64,6 +64,8 @@ class Moods extends React.Component {
                     comment={comment}
                   />
                 )
+              } else {
+                return null
               }
             })}
         </details>
