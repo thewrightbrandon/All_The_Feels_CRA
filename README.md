@@ -1,16 +1,39 @@
-# All_The_Feels_CRA
+# All_The_Feels
+Check out the live site at: [All The Feels!](https://all-the-feels-app.herokuapp.com/)
 
-## Collaborators:
-  - Brandon Wright!
-  - Ryani Durham !
-  - Rachel Taima!
-  - Heath Friend!
+## Collaborators
+  - Brandon Wright
+  - Ryani Durham
+  - Rachel Taima
+  - Heath Friend
 
-## About:
-  - Mood tracker app. Tracks the users moods. Charts the moods by year, month, and week.
-  - Peer Coded: Brandon was the code typer.
+## About
+All The Feels is a Mood-Booster app with Full CRUD functionality and was built with a React frontend and a Django API server. This app was inspired by the emotional state that our team was in as project week began. If a user is not in the best of moods they will be able hop on to All The Feels to get a positive boost and maybe even have a laugh or two! This project was great experience working collaboratively in a React App with multiple components!
 
-## Approach Taken:
+## User Stories
+  - As a user, I want to be able to get a joke on the home page
+  - As a user, I want to be able to add my mood
+  - As a user, I want to be able to view all the moods
+  - As a user, I want to be able to add a comment to a mood
+  - As a user, I want to be able to view all the comments
+  - As a user, I want to be able to edit a mood
+  - As a user, I want to be able to delete a mood
+  - As a user, I want to be able to view a fun chart
+
+## Technologies Used
+
+### Front End
+  - React
+  - Javascript
+  - Axios
+  - CSS3/Bootstrap
+
+### Back End
+  - Python
+  - Django
+  - PostgreSQL
+
+## Approach Taken
 
 1. May 25 2021
     - Slow start with chosing the App idea, creating the backend, and the the front end.
@@ -41,3 +64,11 @@
     - Tidied up some code just semantically.
     - Still discussing more hidden gems around the app just for a laugh or two.
     ------WE LOVE STICKERS ON TRELLO------
+
+## Unsolved Problems / Future Updates
+  - We wanted to integrate authentication but were not able to get it working.
+  - We tried to use chart.js so it would dynamically render user data but without authentication we were having a hard time using it.
+  - Having a filter feature on our view page would be helpful.
+  - Once authentication was implemented, we could add a journaling aspect to the app where a user can track their moods over a period of time and then we could give them their own mood chart.
+  -
+  -
