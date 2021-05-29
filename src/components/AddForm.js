@@ -27,7 +27,7 @@ class AddForm extends React.Component {
   render = () => {
     return (
       <div>
-        <h2>Vent Your Feelings</h2>
+        <h2>Create New Person</h2>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="name">Name</label>
           <input type="text" id="name" onChange={this.handleChange} value={this.state.title} required/>
