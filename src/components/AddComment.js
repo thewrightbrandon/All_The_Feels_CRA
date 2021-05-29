@@ -29,12 +29,13 @@ class AddComment extends React.Component {
         <details>
           <summary>Add Comment</summary>
             <form onSubmit={this.handleSubmit}>
-              <label htmlFor="name">Title</label>
-              <input type="text" id="name" onChange={this.handleChange} value={this.state.name} />
+              <label htmlFor="name">Name</label>
+              <input type="text" id="name" onChange={this.handleChange}
+              value={this.state.name} required />
               <br />
               <label htmlFor="body">Comment</label>
               <textarea type="text" id="body" onChange={this.handleChange} value={this.state.body}
-              placeholder="Comment here..." rows="6" cols="50">
+              placeholder="Comment here..." required >
               </textarea>
               <br />
               <input type="submit" value="Add Comment" />

@@ -19,7 +19,7 @@ class Moods extends React.Component {
 
   addComment = (mood) => {
     axios
-      .post('http://localhost:8000/api/comments', mood)
+      .post('https://all-the-feels.herokuapp.com/api/comments', mood)
       .then(
         (response) => {
           this.getComments()
@@ -29,7 +29,7 @@ class Moods extends React.Component {
 
   getComments = () => {
     axios
-      .get('http://localhost:8000/api/comments')
+      .get('https://all-the-feels.herokuapp.com/api/comments')
       .then(
         (response) => {
           this.setState({ comments: response.data })
@@ -64,6 +64,8 @@ class Moods extends React.Component {
                     comment={comment}
                   />
                 )
+              } else {
+                return null
               }
             })}
         </details>
@@ -75,24 +77,26 @@ class Moods extends React.Component {
           <summary>Edit Mood</summary>
           <form id={this.props.mood.id} onSubmit={this.props.updateMood}>
             <label htmlFor="title">Title</label>
-            <input type="text" id="title" onChange={this.props.handleChange} />
+            <input type="text" id="title" onChange={this.props.handleChange} required />
             <br />
             <label htmlFor="emotion">Emotion</label>
-            <select type="text" id="emotion" onChange={this.props.handleChange}>
-              <option value="">How are you feeling...</option>
-              <option value="Happy">Happy</option>
-              <option value="Sad">Sad</option>
-              <option value="Angry">Angry</option>
-              <option value="Scared">Scared</option>
-              <option value="Excited">Excited</option>
-              <option value="Moody">Moody</option>
-              <option value="Depressed">Depressed</option>
-              <option value="Gleeful">Gleeful</option>
+            <select type="text" id="emotion" onChange={this.props.handleChange} required>
+              <option value="">What's Your Mood...</option>
+              <option value="Eating Cheetos in Bed">Eating Cheetos in Bed</option>
+              <option value="Fish Out of Water">Fish Out of Water</option>
+              <option value="Three Flat Tires">Three Flat Tires</option>
+              <option value="Sharks Eating My Face">Sharks Eating My Face</option>
+              <option value="Staring Into an Infinite Abyss">Staring Into an Infinite Abyss</option>
+              <option value="Whiskey Shots on the Train Tracks">Whiskey Shots on the Train Tracks</option>
+              <option value="Stepped on a Lego">Stepped on a Lego</option>
+              <option value="Popcorn Kernel in Your Teeth">Popcorn Kernel in Your Teeth</option>
+              <option value="Tripping Up the Stairs">Tripping Up the Stairs</option>
+              <option value="Someone Tresspassing in My Swamp">Someone Tresspassing in My Swamp</option>
             </select>
             <br />
             <label htmlFor="notes">Notes</label>
             <textarea type="text" id="notes" onChange={this.props.handleChange}
-            placeholder="Why are you feeling this way?" rows="6" cols="50">
+            placeholder="Why are you feeling this way?" required>
             </textarea>
             <br />
             <input type="submit" value="Edit the Feels" />
