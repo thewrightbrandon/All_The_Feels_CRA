@@ -1,4 +1,4 @@
-# All_The_Feels
+# All The Feels
 Check out the live site at: [All The Feels!](https://all-the-feels-app.herokuapp.com/)
 
 ## Collaborators
