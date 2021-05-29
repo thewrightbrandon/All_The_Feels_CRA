@@ -24,6 +24,7 @@
     - Decided to peer code: React Router and Chart.JS, Login Auth and CSS will be tackled by two members or the group.
     - Created a topic list for May 27th Scrum.
 
+
 3. May 27 2021
    - Had a scrum meeting before we began the day to decided who will be tackling Auth(Brandon and Heath) and ChartJS(Ryani and Rachel).
    - Each team focused on their given stretch goal to focus on.
@@ -34,3 +35,9 @@
    - Decided to add a third party api to render some jokes on the 'Home' page.
    - Decided to create a comment section
    - Decided to have fun with CSS.....wanting to add fun hidden gems around the app. (happy plant must be added)
+
+5. May 29 2021
+    - Had another scrum meeting where we discussed what all we have done and what we have left to do. Realized we've reached several stretch goals and to focus on styling after making sure we deploy properly to Heroku.
+    - Tidied up some code just semantically.
+    - Still discussing more hidden gems around the app just for a laugh or two.
+    ------WE LOVE STICKERS ON TRELLO------
