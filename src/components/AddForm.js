@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { withRouter } from 'react-router-dom'
+
 class AddForm extends React.Component {
 
   state = {
@@ -15,7 +17,6 @@ class AddForm extends React.Component {
   }
 
   handleSubmit = (event) => {
-    event.preventDefault()
     this.props.addMood(this.state)
       this.setState({
         title: '',
@@ -24,13 +25,19 @@ class AddForm extends React.Component {
       })
   }
 
+  handleClick = (event) => {
+    event.preventDefault()
+    this.handleSubmit()
+    this.props.history.push('/Moods')
+  }
+
   render = () => {
     return (
       <div>
         <h2>Create New Person</h2>
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" onChange={this.handleChange} value={this.state.title} required/>
+          <label htmlFor="Title">Title</label>
+          <input type="text" id="title" onChange={this.handleChange} value={this.state.title} required/>
           <br />
           <label htmlFor="emotion">Emotion</label>
           <select type="text" id="emotion" onChange={this.handleChange}
@@ -53,11 +60,11 @@ class AddForm extends React.Component {
           placeholder="Why are you feeling this way?" required>
           </textarea>
           <br />
-          <input type="submit" value="Create the feels" />
+          <input type="submit" value="Create the feels" onClick={this.handleClick} />
         </form>
       </div>
     )
   }
 }
 
-export default AddForm
+export default withRouter(AddForm)
