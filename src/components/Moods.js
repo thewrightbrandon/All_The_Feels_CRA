@@ -50,24 +50,26 @@ class Moods extends React.Component {
   render = () => {
     return (
       <div className="moods">
-        <h2>{this.props.mood.title}</h2>
-        <h4>Feels: {this.props.mood.emotion}</h4>
-        <h4>Notes: {this.props.mood.notes}</h4>
+        <h1>{this.props.mood.title}</h1>
+        <h4><b>Feels:</b> {this.props.mood.emotion}</h4>
+        <h5>{this.props.mood.notes}</h5>
         <h6>{this.props.mood.created_at}</h6>
-        <details>
+        <details className="commentDetails">
           <summary>Read Comments</summary>
-            {this.state.comments.map((comment) => {
-              if (comment.mood === this.props.mood.id) {
-                return (
-                  <Comments
-                    key={comment.id}
-                    comment={comment}
-                  />
-                )
-              } else {
-                return null
-              }
-            })}
+            <div className="commentDiv">
+              {this.state.comments.map((comment) => {
+                if (comment.mood === this.props.mood.id) {
+                  return (
+                    <Comments
+                      key={comment.id}
+                      comment={comment}
+                    />
+                  )
+                } else {
+                  return null
+                }
+              })}
+            </div>
         </details>
         <AddComment
           addComment={this.addComment}
@@ -75,15 +77,12 @@ class Moods extends React.Component {
         />
         <details className="edit">
           <summary>Edit Mood</summary>
-          <button onClick={this.props.deleteMood} value={this.props.mood.id}>
-            Delete 
-          </button>
-          <form id={this.props.mood.id} onSubmit={this.props.updateMood}>
-            <label htmlFor="title">Title</label>
-            <input type="text" id="title" onChange={this.props.handleChange} required />
+          <form className="editForm" id={this.props.mood.id} onSubmit={this.props.updateMood}>
+            <label className="form-label" htmlFor="title">Title</label>
+            <input className="form-control" type="text" id="title" onChange={this.props.handleChange} required />
 
-            <label htmlFor="emotion">Emotion</label>
-            <select type="text" id="emotion" onChange={this.props.handleChange} required>
+            <label className="form-label" htmlFor="emotion">Emotion</label>
+            <select className="form-select" type="text" id="emotion" onChange={this.props.handleChange} required>
               <option value="">What's Your Mood...</option>
               <option value="Eating Cheetos in Bed">Eating Cheetos in Bed</option>
               <option value="Fish Out of Water">Fish Out of Water</option>
@@ -97,12 +96,14 @@ class Moods extends React.Component {
               <option value="Someone Tresspassing in My Swamp">Someone Tresspassing in My Swamp</option>
             </select>
 
-            <label htmlFor="notes">Notes</label>
-            <textarea type="text" id="notes" onChange={this.props.handleChange}
-            placeholder="Why are you feeling this way?" required>
+            <label className="form-label" htmlFor="notes">Notes</label>
+            <textarea className="form-control" type="text" id="notes" onChange={this.props.handleChange}
+            placeholder="Why are you feeling this way?" rows="6" required>
             </textarea>
-
-            <input type="submit" value="Edit the Feels" />
+            <input className="btn btn-light editButton" type="submit" value="Edit the Feels" />
+            <button className="btn btn-danger deleteButton" onClick={this.props.deleteMood} value={this.props.mood.id}>
+              Delete the Feels
+            </button>
           </form>
         </details>
       </div>

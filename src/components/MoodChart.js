@@ -6,13 +6,13 @@ class MoodChart extends React.Component {
   render = () => {
     return (
       <div id="chart">
-        <h1>All the Feels Success Chart</h1>
+        <h1>Success of All The Feels</h1>
         <Bar
           data={{
-            labels: ['# of people we\'ve made smile', '# of people who chose crabiness'],
+            labels: ['% of people we\'ve made smile', '% of people who chose crabiness'],
             datasets: [{
-              label: 'Moods Counter',
-              data: [99, 1],
+              label: 'Happy People',
+              data: [98, 2],
               backgroundColor: [
                 'rgb(255, 206, 86)',
                 'rgb(153, 102, 255)'
