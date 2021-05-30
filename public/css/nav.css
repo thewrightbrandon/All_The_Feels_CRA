@@ -1,15 +1,16 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: flex-end;
 }
 .navbar > .app-name {
   font-family: 'Playball', cursive;
 }
 
-.navbar > .logo {
-
+.navbar > #logo {
+  height: 13%;
+  width: 13%;
 }
 
 .navbar-nav {
