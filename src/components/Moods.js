@@ -76,7 +76,7 @@ class Moods extends React.Component {
         <details className="edit">
           <summary>Edit Mood</summary>
           <button onClick={this.props.deleteMood} value={this.props.mood.id}>
-            X
+            Delete 
           </button>
           <form id={this.props.mood.id} onSubmit={this.props.updateMood}>
             <label htmlFor="title">Title</label>
