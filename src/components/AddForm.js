@@ -33,8 +33,8 @@ class AddForm extends React.Component {
 
   render = () => {
     return (
-      <div>
-        <h2>Create New Person</h2>
+      <div id="add" >
+        <h2>Vent Your Feelings</h2>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="Title">Title</label>
           <input type="text" id="title" onChange={this.handleChange} value={this.state.title} required/>

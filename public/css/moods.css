@@ -1,0 +1,21 @@
+.moods {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0em;
+  margin: 1em;
+  background-color: rgba(255,255,255, 0.3);
+}
+
+.moods > h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.moods > h4, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.moods > details > summary {
+  font-family: 'Raleway', sans-serif;
+}

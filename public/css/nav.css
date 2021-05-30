@@ -31,9 +31,6 @@
 .nav-link {
   color: rgb(86, 139, 191);
 }
-.nav-item:hover {
-	background-color: pink;
-}
 
 #root {
 	margin-left: 140px;
