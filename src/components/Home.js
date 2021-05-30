@@ -42,27 +42,27 @@ class Home extends React.Component {
     return (
       <div id="home">
         <h1>All The Feels</h1>
-        <h4>a mood boosting experience</h4>
+        <h4>a mood-boosting experience</h4>
         <div className="app-about">
-          <h2> Welcome!</h2>
-          <p>Feeling down? Feeling like shit? Feeling like becoming a world dictator cause humans sucks?</p>
-          <p>There are a lot of people that feel the exact same!</p>
+          <h2><b>Welcome!</b></h2>
+          <p>Feeling down? Feeling like shit? Feeling like becoming a World dictator 'cause humans suck?</p>
+          <p><b><u>You are not alone!</u></b></p>
           <p>Here at "All the Feels", you can anonymously vent and scream into the void known as the internet with other likeminded people of the world!</p>
-
         </div>
 
         <br />
         <div className="jokes">
-        <h4> Do you like Jokes?</h4>
+        <h3>Do you like Jokes?</h3>
+        <br />
         <form onSubmit={this.getJoke}>
-          <input type="submit" value="Tell me a joke!" />
+          <input className="btn btn-light" type="submit" value="Tell me a joke!" />
         </form>
         <br />
-        <h5>{this.state.setup}</h5>
+        <h5><b>{this.state.setup}</b></h5>
         <br />
-        <button onClick={this.revealPunchline}>Punchline</button>
+        <button className="btn btn-light" onClick={this.revealPunchline}>Punchline</button>
         <br />
-        {this.state.revealPunchline ? <h5>{this.state.punchline}</h5> : null}
+        {this.state.revealPunchline ? <h5><b>{this.state.punchline}</b></h5> : null}
         </div>
       </div>
     )

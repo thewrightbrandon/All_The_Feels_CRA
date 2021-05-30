@@ -7,7 +7,7 @@
 
 #home > h1 {
   font-family: 'Playball', cursive;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 #home > h4 {
@@ -31,12 +31,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0.85em;
-  background-color: rgba(255,255,255, 0.3)
+  padding: 1.2em;
+  background-color: rgba(255,255,255, 0.3);
+  line-height: 27px;
+  border-radius: 10px;
+  max-width: 950px;
 }
 
 .app-about > h2 {
   font-family: 'Montserrat', sans-serif;
+}
+
+.app-about > p {
+  text-align: center;
+  /* font-family: 'Raleway', sans-serif; */
 }
 
 #home > .jokes {
@@ -44,10 +52,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  line-height: 15px;
 }
+
 .jokes > h4 {
   font-family: 'Montserrat', sans-serif;
 }
+
 .jokes > h5 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
