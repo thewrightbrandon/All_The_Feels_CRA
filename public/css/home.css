@@ -1,0 +1,54 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home > h1 {
+  font-family: 'Playball', cursive;
+  font-size: 3em;
+}
+
+#home > h4 {
+  font-family: 'Raleway', sans-serif;
+}
+ #home > h5 {
+   font-weight: bold;
+   font-family: 'Raleway', sans-serif;
+ }
+#home > .jokes > form > input[type=submit] {
+  border: none;
+  font-family: 'Raleway', sans-serif;
+}
+.jokes > button {
+  border: none;
+  font-family: 'Raleway', sans-serif;
+}
+.app-about {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.85em;
+  background-color: rgba(255,255,255, 0.3)
+}
+
+.app-about > h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#home > .jokes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.jokes > h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+.jokes > h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}

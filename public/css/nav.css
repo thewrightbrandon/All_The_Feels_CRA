@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.navbar > .app-name {
+  font-family: 'Playball', cursive;
+}
+
+.navbar > .logo {
+
+}
+
+.navbar-nav {
+	width: 130px;
+   position: fixed;
+   z-index: 1;
+   top: 20px;
+   left: 10px;
+   background: rgba(157, 204, 234, 0.3);
+   overflow-x: hidden;
+   padding: 8px 0;
+}
+
+.navbar-nav > .nav-item {
+	padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
+}
+.nav-link {
+  color: rgb(86, 139, 191);
+}
+
+#root {
+	margin-left: 140px;
+	padding: 0px 10px;
+}
+
+.navbar > .container-fluid {
+  justify-content:space-between;
+}
+
+.navbar-nav {
+  flex-direction: column;
+
+}
