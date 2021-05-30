@@ -84,6 +84,7 @@ class App extends React.Component {
       <BrowserRouter>
         <div>
           <nav className="navbar">
+          <img src="imgs/ATF_logo.png" alt="logo" id="logo" />
             <ul id="mySidebar" className="container-fluid navbar-nav">
               <li className="nav-item">
                 <Link className="nav-link" to='/'><img src="imgs/home.png" alt="Home" /></Link>
