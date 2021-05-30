@@ -84,7 +84,7 @@ class App extends React.Component {
       <BrowserRouter>
         <div>
           <nav className="navbar">
-            <ul className="container-fluid navbar-nav">
+            <ul id="mySidebar" className="container-fluid navbar-nav">
               <li className="nav-item">
                 <Link className="nav-link" to='/'>Home</Link>
               </li>
@@ -102,7 +102,6 @@ class App extends React.Component {
           <div className="container">
             <Switch>
               <Route exact path='/'>
-                <h1>All The Feels</h1>
                 <Home />
               </Route>
               <Route path='/AddForm'>
@@ -127,6 +126,10 @@ class App extends React.Component {
                 <MoodChart />
               </Route>
             </Switch>
+          </div>
+          <div className="ocean">
+            <div className="wave"></div>
+            <div className="wave"></div>
           </div>
         </div>
       </BrowserRouter>
