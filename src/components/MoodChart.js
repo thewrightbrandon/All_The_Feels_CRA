@@ -9,7 +9,7 @@ class MoodChart extends React.Component {
         <h1>Success of All The Feels</h1>
         <Bar
           data={{
-            labels: ['% of people we\'ve made smile', '% of people who chose crabiness'],
+            labels: ['% of smiles', '% of forever grumpy pants'],
             datasets: [{
               label: 'Happy People',
               data: [98, 2],
