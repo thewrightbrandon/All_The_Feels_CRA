@@ -1,0 +1,151 @@
+/* ADD FORM */
+
+#add {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background-color: rgba(255,255,255, 0.3);
+  border-radius: 10px;
+  padding: 1.5em;
+  max-width: 1050px;
+  margin: 1% auto 0;
+}
+
+#addContainer > h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 3%;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+#add > form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+#add > form > label {
+  font-size: 1.8em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#add > form > input {
+  border: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+.addButton {
+  width: 200px;
+  margin: 10px auto;
+}
+
+
+/* EDIT FORM */
+
+.edit {
+  width: 350px;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.edit > form > label, select {
+  font-family: 'Raleway', sans-serif;
+}
+
+.editForm > .form-label {
+  margin-top: 5%;
+  font-weight: bold;
+}
+
+.editButton {
+  text-align: center;
+  width: 50%;
+  margin: 5% auto 0;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+.deleteButton {
+  width: 50%;
+  margin: 5% auto 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* ADD COMMENT FORM */
+
+#comments {
+  width: 350px;
+}
+
+#comments > details > summary {
+  font-family: 'Raleway', sans-serif;
+}
+
+#comments > details > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#comments > details > form > label {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 5%;
+  font-weight: bold;
+}
+
+#comments > details > form > input {
+  font-family: 'Raleway', sans-serif;
+}
+
+.addCommentButton {
+  width: 200px;
+  margin: 5% auto;
+}
+
+/* VIEW COMMENTS */
+
+.commentDetails {
+  width: 350px;
+}
+
+.commentDiv {
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+#view-comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5% auto;
+  padding: 0.3em 0.5em;
+  background-color: rgba(255,255,255, 0.3);
+}
+
+#view-comments > h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#view-comments > h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/* GENERAL FORM CSS */
+
+textarea {
+  resize: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+summary {
+  font-size: 1.2em;
+}

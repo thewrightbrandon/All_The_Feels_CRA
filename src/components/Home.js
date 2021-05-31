@@ -40,19 +40,30 @@ class Home extends React.Component {
 
   render = () => {
     return (
-      <div>
+      <div id="home">
         <h1>All The Feels</h1>
-        <h4>Tagline Placeholder</h4>
+        <h4>a mood-boosting experience</h4>
+        <div className="app-about">
+          <h2><b>Welcome!</b></h2>
+          <p>Feeling down? Feeling like shit? Feeling like becoming a World dictator 'cause humans suck?</p>
+          <p><b><u>You are not alone!</u></b></p>
+          <p>Here at "All the Feels", you can anonymously vent and scream into the void known as the internet with other likeminded people of the world!</p>
+        </div>
+
+        <br />
+        <div className="jokes">
+        <h3>Do you like Jokes?</h3>
         <br />
         <form onSubmit={this.getJoke}>
-          <input type="submit" value="Tell me a joke!" />
+          <input className="btn btn-light" type="submit" value="Tell me a joke!" />
         </form>
         <br />
-        <h2>{this.state.setup}</h2>
+        <h5><b>{this.state.setup}</b></h5>
         <br />
-        <button onClick={this.revealPunchline}>Punchline</button>
+        <button className="btn btn-light" onClick={this.revealPunchline}>Punchline</button>
         <br />
-        {this.state.revealPunchline ? <h2>{this.state.punchline}</h2> : null}
+        {this.state.revealPunchline ? <h5><b>{this.state.punchline}</b></h5> : null}
+        </div>
       </div>
     )
   }

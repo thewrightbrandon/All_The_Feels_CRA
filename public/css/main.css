@@ -1,16 +1,10 @@
+@import "background.css";
+@import "nav.css";
+@import "home.css";
+@import "chart.css";
+@import "moods.css";
+@import "add.css";
+
 body {
-
-}
-
-.navbar {
-  justify-content: space-around;
-}
-
-.navbar > .container-fluid {
-  justify-content: space-around;
-}
-
-.navbar-nav {
-  flex-direction: row;
-
+  min-width: 500px;
 }

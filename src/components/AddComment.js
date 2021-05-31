@@ -25,19 +25,17 @@ class AddComment extends React.Component {
 
   render = () => {
     return (
-      <div>
+      <div id="comments">
         <details>
           <summary>Add Comment</summary>
             <form onSubmit={this.handleSubmit}>
-              <label htmlFor="name">Title</label>
-              <input type="text" id="name" onChange={this.handleChange} value={this.state.name} />
-              <br />
-              <label htmlFor="body">Comment</label>
-              <textarea type="text" id="body" onChange={this.handleChange} value={this.state.body}
-              placeholder="Comment here..." rows="6" cols="50">
+              <label className="form-label" htmlFor="name">Name</label>
+              <input className="form-control" type="text" id="name" onChange={this.handleChange}
+              value={this.state.name} required />
+              <label className="form-label" htmlFor="body">Comment</label>
+              <textarea className="form-control" type="text" id="body" onChange={this.handleChange} value={this.state.body} placeholder="Comment here..." rows="3" required >
               </textarea>
-              <br />
-              <input type="submit" value="Add Comment" />
+              <input className="btn btn-light addCommentButton" type="submit" value="Add Comment" />
             </form>
         </details>
       </div>
