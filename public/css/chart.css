@@ -11,3 +11,11 @@
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
+
+@media screen and (max-width: 1400px) {
+
+  #chart {
+    width: 100%;
+  }
+
+}
