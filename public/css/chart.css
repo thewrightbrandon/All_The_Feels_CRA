@@ -4,7 +4,6 @@
   border-radius: 10px;
   width: 80%;
   margin: 2% auto 0;
-  min-width: 500px;
 }
 
 #chart > h1 {
@@ -13,14 +12,6 @@
 }
 
 @media screen and (max-width: 1400px) {
-
-  #chart {
-    width: 100%;
-  }
-
-}
-
-@media screen and (max-width: 600px) {
 
   #chart {
     width: 100%;
