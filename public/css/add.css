@@ -1,59 +1,96 @@
+/* ADD FORM */
+
 #add {
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
   background-color: rgba(255,255,255, 0.3);
-  padding: 1em 0em;
+  border-radius: 10px;
+  padding: 1.5em;
+  max-width: 1050px;
+  margin: 1% auto 0;
+}
+
+#addContainer > h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 3%;
+  margin-top: 0;
+  font-weight: bold;
 }
 
 #add > form {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 
 #add > form > label {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
-#add > form > input[type=submit] {
+#add > form > input {
   border: none;
   font-family: 'Raleway', sans-serif;
 }
 
-#add > form > select[type=text] {
-  font-family: 'Raleway', sans-serif;
+.addButton {
+  width: 200px;
+  margin: 10px auto;
 }
 
-#add > form > select[type=text] > option {
-  font-family: 'Raleway', sans-serif;
+
+/* EDIT FORM */
+
+.editDiv {
+  width: 75%;
 }
-/* Edit Form */
-.moods > .edit > form {
+
+.edit > summary {
+  text-align: center;
+}
+
+.editForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-.edit > form > input[type=submit] {
-  margin-top: .5em;
-  border: none;
-  font-family: 'Raleway', sans-serif;
 }
 
 .edit > form > label, select {
   font-family: 'Raleway', sans-serif;
 }
 
-.edit > button {
+.editForm > .form-label {
+  margin-top: 5%;
+  font-weight: bold;
+}
+
+.editButton {
   text-align: center;
-  margin-top: .35em;
+  width: 200px;
+  margin: 5% auto 0;
   border: none;
   font-family: 'Raleway', sans-serif;
 }
-/* comments css is here as well */
+
+.deleteButtonDiv {
+  margin: 5% auto 0;
+  text-align: center;
+}
+
+.deleteButton {
+  width: 200px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* ADD COMMENT FORM */
+
+#comments {
+  width: 75%;
+}
 
 #comments > details > summary {
   font-family: 'Raleway', sans-serif;
@@ -63,17 +100,33 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 #comments > details > form > label {
   font-family: 'Raleway', sans-serif;
+  margin-top: 5%;
+  font-weight: bold;
 }
 
-#comments > details > form > input[type=submit] {
+#comments > details > form > input {
   font-family: 'Raleway', sans-serif;
-  border: none;
-  margin-top: 0.5em;
+}
+
+.addCommentButton {
+  width: 200px;
+  margin: 5% auto;
+}
+
+/* VIEW COMMENTS */
+
+.commentDetails {
+  width: 75%;
+}
+
+.commentDiv {
+  overflow-y: auto;
+  max-height: 300px;
+  margin: 0 auto;
 }
 
 #view-comments {
@@ -81,14 +134,34 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 0.5em;
+  margin: 5% auto;
   padding: 0.3em 0.5em;
   background-color: rgba(255,255,255, 0.3);
 }
+
 #view-comments > h5 {
   font-family: 'Montserrat', sans-serif;
 }
 
 #view-comments > h6 {
   font-family: 'Raleway', sans-serif;
+}
+
+
+/* GENERAL FORM CSS */
+
+textarea {
+  resize: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+summary {
+  font-size: 1.2em;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+
+
+
 }
