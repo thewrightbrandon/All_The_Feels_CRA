@@ -101,10 +101,12 @@ class Moods extends React.Component {
             placeholder="Why are you feeling this way?" rows="6" required>
             </textarea>
             <input className="btn btn-light editButton" type="submit" value="Edit the Feels" />
+          </form>
+          <div className="deleteButtonDiv">
             <button className="btn btn-danger deleteButton" onClick={this.props.deleteMood} value={this.props.mood.id}>
               Delete the Feels
             </button>
-          </form>
+          </div>
         </details>
       </div>
     )
