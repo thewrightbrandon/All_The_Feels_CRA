@@ -19,3 +19,11 @@
   }
 
 }
+
+@media screen and (max-width: 600px) {
+
+  #chart {
+    width: 100%;
+  }
+
+}
