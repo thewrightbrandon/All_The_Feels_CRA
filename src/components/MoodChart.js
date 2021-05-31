@@ -5,8 +5,8 @@ class MoodChart extends React.Component {
 
   render = () => {
     return (
-      <div>
-        <h1>Your Mood Chart</h1>
+      <div id="chart">
+        <h1>All the Feels Success Chart</h1>
         <Bar
           data={{
             labels: ['# of people we\'ve made smile', '# of people who chose crabiness'],

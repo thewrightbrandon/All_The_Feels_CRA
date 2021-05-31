@@ -1,32 +1,6 @@
-body {
-
-}
-
-.sticky-top {
-    background: linear-gradient(-45deg, #3d86d6, #d3d433, #d828ae);
-    background-size: 600% 600%;
-    animation: AnimationName 15s ease infinite;
-}
-
-.navbar {
-  justify-content: space-around;
-}
-
-.navbar > .container-fluid {
-  justify-content: space-around;
-}
-
-.navbar-nav {
-  flex-direction: row;
-
-}
-
-li {
-  list-style: none;
-}
-
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
-}
+@import "background.css";
+@import "nav.css";
+@import "home.css";
+@import "add.css";
+@import "chart.css";
+@import "moods.css";

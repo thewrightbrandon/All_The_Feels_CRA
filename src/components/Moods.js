@@ -49,7 +49,7 @@ class Moods extends React.Component {
 
   render = () => {
     return (
-      <div>
+      <div className="moods">
         <h2>{this.props.mood.title}</h2>
         <h4>Feels: {this.props.mood.emotion}</h4>
         <h4>Notes: {this.props.mood.notes}</h4>
@@ -73,12 +73,15 @@ class Moods extends React.Component {
           addComment={this.addComment}
           mood={this.props.mood}
         />
-        <details>
+        <details className="edit">
           <summary>Edit Mood</summary>
+          <button onClick={this.props.deleteMood} value={this.props.mood.id}>
+            Delete 
+          </button>
           <form id={this.props.mood.id} onSubmit={this.props.updateMood}>
             <label htmlFor="title">Title</label>
             <input type="text" id="title" onChange={this.props.handleChange} required />
-            <br />
+
             <label htmlFor="emotion">Emotion</label>
             <select type="text" id="emotion" onChange={this.props.handleChange} required>
               <option value="">What's Your Mood...</option>
@@ -93,17 +96,14 @@ class Moods extends React.Component {
               <option value="Tripping Up the Stairs">Tripping Up the Stairs</option>
               <option value="Someone Tresspassing in My Swamp">Someone Tresspassing in My Swamp</option>
             </select>
-            <br />
+
             <label htmlFor="notes">Notes</label>
             <textarea type="text" id="notes" onChange={this.props.handleChange}
             placeholder="Why are you feeling this way?" required>
             </textarea>
-            <br />
+
             <input type="submit" value="Edit the Feels" />
           </form>
-          <button onClick={this.props.deleteMood} value={this.props.mood.id}>
-            Delete the Feels
-          </button>
         </details>
       </div>
     )

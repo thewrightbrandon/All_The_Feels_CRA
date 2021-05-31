@@ -1,0 +1,94 @@
+#add {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background-color: rgba(255,255,255, 0.3);
+  padding: 1em 0em;
+}
+
+#add > form {
+  display: flex;
+  flex-direction: column;
+}
+
+#add > form > label {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+#add > form > input[type=submit] {
+  border: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+#add > form > select[type=text] {
+  font-family: 'Raleway', sans-serif;
+}
+
+#add > form > select[type=text] > option {
+  font-family: 'Raleway', sans-serif;
+}
+/* Edit Form */
+.moods > .edit > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit > form > input[type=submit] {
+  margin-top: .5em;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+.edit > form > label, select {
+  font-family: 'Raleway', sans-serif;
+}
+
+.edit > button {
+  text-align: center;
+  margin-top: .35em;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+}
+/* comments css is here as well */
+
+#comments > details > summary {
+  font-family: 'Raleway', sans-serif;
+}
+
+#comments > details > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#comments > details > form > label {
+  font-family: 'Raleway', sans-serif;
+}
+
+#comments > details > form > input[type=submit] {
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  margin-top: 0.5em;
+}
+
+#view-comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.5em;
+  padding: 0.3em 0.5em;
+  background-color: rgba(255,255,255, 0.3);
+}
+#view-comments > h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#view-comments > h6 {
+  font-family: 'Raleway', sans-serif;
+}

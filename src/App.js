@@ -83,28 +83,26 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <div>
-          <nav className="navbar sticky-top">
-            <div class="container-fluid">
-              <ul className="navbar">
-                <li className="nav-item">
-                  <Link className="nav-link" to='/'>Home</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to='/AddForm'>Add Mood</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to='/Moods'>View Moods</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to='/MoodChart'>Mood Chart</Link>
-                </li>
-              </ul>
-            </div>
+          <nav className="navbar">
+          <img src="imgs/ATF_logo.png" alt="logo" id="logo" />
+            <ul id="mySidebar" className="container-fluid navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link" to='/'><img src="imgs/home.png" alt="Home" /></Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to='/AddForm'><img src="imgs/plus.png" alt="addMood" /></Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to='/Moods'><img src ="imgs/visibility.png" alt="viewmoods"/></Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to='/MoodChart'><img src="imgs/bar-chart.png" alt="chart"/></Link>
+              </li>
+            </ul>
           </nav>
           <div className="container">
             <Switch>
               <Route exact path='/'>
-                <h1>All The Feels</h1>
                 <Home />
               </Route>
               <Route path='/AddForm'>
