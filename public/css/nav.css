@@ -4,6 +4,7 @@
   justify-content: flex-end;
   align-items: flex-end;
 }
+
 .navbar > .app-name {
   font-family: 'Playball', cursive;
 }
@@ -15,7 +16,7 @@
 }
 
 .navbar-nav {
-	 width: 350px;;
+	 width: 350px;
    position: fixed;
    top: 10px;
    left: 5px;
@@ -48,6 +49,11 @@
   align-items: center;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (max-width: 700px) {
+
+  .navbar-nav {
+  	 width: 225px;
+
+   }
 
 }

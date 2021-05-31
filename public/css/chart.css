@@ -18,3 +18,21 @@
   }
 
 }
+
+@media screen and (max-width: 700px) {
+
+  #chart {
+    background-color: rgba(255,255,255, 0.3);
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+    margin: 15% auto 0;
+  }
+
+  #chart > h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+}
