@@ -45,8 +45,12 @@
 
 /* EDIT FORM */
 
-.edit {
-  width: 350px;
+.editDiv {
+  width: 75%;
+}
+
+.edit > summary {
+  text-align: center;
 }
 
 .editForm {
@@ -66,7 +70,7 @@
 
 .editButton {
   text-align: center;
-  width: 50%;
+  width: 200px;
   margin: 5% auto 0;
   border: none;
   font-family: 'Raleway', sans-serif;
@@ -78,14 +82,14 @@
 }
 
 .deleteButton {
-  width: 50%;
+  width: 200px;
   font-family: 'Raleway', sans-serif;
 }
 
 /* ADD COMMENT FORM */
 
 #comments {
-  width: 350px;
+  width: 75%;
 }
 
 #comments > details > summary {
@@ -116,12 +120,13 @@
 /* VIEW COMMENTS */
 
 .commentDetails {
-  width: 350px;
+  width: 75%;
 }
 
 .commentDiv {
   overflow-y: auto;
   max-height: 300px;
+  margin: 0 auto;
 }
 
 #view-comments {
@@ -152,4 +157,11 @@ textarea {
 
 summary {
   font-size: 1.2em;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+
+
+
 }
