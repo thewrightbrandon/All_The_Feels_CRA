@@ -65,10 +65,16 @@ All The Feels is a Mood-Booster app with Full CRUD functionality and was built w
     - Still discussing more hidden gems around the app just for a laugh or two.
     ------WE LOVE STICKERS ON TRELLO------
 
+6. May 30 2021
+    - CSS was added. Peer Coded the CSS in order to make it responsive.
+
+7. May 31 2021
+   - Tied up any lose ends.
+
+
 ## Unsolved Problems / Future Updates
   - We wanted to integrate authentication but were not able to get it working.
-  - We tried to use chart.js so it would dynamically render user data but without authentication we were having a hard time using it.
+  - We tried to use Chart.js so it would dynamically render user data but without authentication we were having a hard time using it.
   - Having a filter feature on our view page would be helpful.
   - Once authentication was implemented, we could add a journaling aspect to the app where a user can track their moods over a period of time and then we could give them their own mood chart.
-  -
-  -
+  - We had wanted to have a collapsed side bar however, css has defeated me(R.T)
