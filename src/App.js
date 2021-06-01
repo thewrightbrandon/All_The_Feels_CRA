@@ -111,7 +111,7 @@ class App extends React.Component {
                 />
               </Route>
               <Route path='/Moods'>
-                {this.state.moods.map((mood) => {
+                {this.state.moods.reverse().map((mood) => {
                   return (
                     <Moods
                       key={mood.id}

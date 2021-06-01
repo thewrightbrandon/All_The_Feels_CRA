@@ -57,7 +57,7 @@ class Moods extends React.Component {
         <details className="commentDetails">
           <summary>Read Comments</summary>
             <div className="commentDiv">
-              {this.state.comments.map((comment) => {
+              {this.state.comments.reverse().map((comment) => {
                 if (comment.mood === this.props.mood.id) {
                   return (
                     <Comments
@@ -118,7 +118,7 @@ class Moods extends React.Component {
           behavior: "smooth"
          }
        )
-     }}><img src="imgs/arrow.png" alt="up arrow"/></button>
+     }}><img className="arrowImage" src="imgs/arrow.png" alt="up arrow"/></button>
       </div>
     )
   }
