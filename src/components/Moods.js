@@ -57,7 +57,7 @@ class Moods extends React.Component {
         <details className="commentDetails">
           <summary>Read Comments</summary>
             <div className="commentDiv">
-              {this.state.comments.map((comment) => {
+              {this.state.comments.reverse().map((comment) => {
                 if (comment.mood === this.props.mood.id) {
                   return (
                     <Comments
@@ -110,6 +110,15 @@ class Moods extends React.Component {
             </div>
           </details>
         </div>
+        <button className="btn scrollTopButton"
+          onClick={() => {
+            window.scroll(
+        {
+          top: 0,
+          behavior: "smooth"
+         }
+       )
+     }}><img className="arrowImage" src="imgs/arrow.png" alt="up arrow"/></button>
       </div>
     )
   }
