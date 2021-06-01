@@ -110,6 +110,15 @@ class Moods extends React.Component {
             </div>
           </details>
         </div>
+        <button className="btn scrollTopButton"
+          onClick={() => {
+            window.scroll(
+        {
+          top: 0,
+          behavior: "smooth"
+         }
+       )
+     }}><img src="imgs/arrow.png" alt="up arrow"/></button>
       </div>
     )
   }

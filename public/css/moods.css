@@ -30,3 +30,12 @@
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
+
+.scrollTopButton {
+  position: fixed;
+  min-width: 32px;
+  bottom: 0;
+  right: 0;
+  /* z-index: 1; */
+  color: black;
+}
