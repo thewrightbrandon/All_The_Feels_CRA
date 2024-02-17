@@ -1,5 +1,6 @@
 # All The Feels
-Check out the live site at: [All The Feels!](https://all-the-feels-app.herokuapp.com/)
+
+**LIVE APP NOT SUPPORTED AT THIS TIME**
 
 ## Collaborators
   - Brandon Wright
